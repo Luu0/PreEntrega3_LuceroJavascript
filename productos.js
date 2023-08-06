@@ -12,7 +12,7 @@ const Productos=[{
   },
   {
     id:3,
-    foto: "https://http2.mlstatic.com/D_NQ_NP_719382-MLA47921864533_102021-O.webp",
+    foto: "https://http2.mlstatic.com/D_NQ_NP_830625-MLA52062909392_102022-O.webp",
     nombre:"Disco Solido Ssd 1tb M.2 Kingston Snv2s",
     precio:25000
   },
@@ -34,3 +34,4 @@ const Productos=[{
     nombre:"Notebook gamer Asus TUF A15 FA507RE jaeger",
     precio:900000
   }];
+
