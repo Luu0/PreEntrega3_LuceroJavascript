@@ -1,26 +1,49 @@
+const carrito = [];
+let resultado = 0
+
 function renderizarprod(Productos){
   for (const producto of Productos){
-    contenidotienda.innerHTML +=`
+    document.getElementById("contenidotienda").innerHTML +=`
     <div class="col-4">
-      <div class="card mt-4" style="width: 18rem;">
+      <div class="card mt-4" style="width: 26rem;">
         <img src="${producto.foto}" class="card-img-top" height="420">
         <div class="card-body">
           <h3 class="card-title">${producto.nombre}</h3>
           <p class="card-text">${"$" + producto.precio}</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
+          <button id=${producto.id} class="compra btn btn-primary">Comprar</button>
         </div>
       </div>
     </div>
     `
-  }  
+    let botones = document.getElementsByClassName("compra");
+
+
+    for (const boton of botones){
+
+      // PARA AGREGAR PRODUCTOS AL CARRO     
+      boton.onclick = () =>{
+        const prodACarro = Productos.find((producto) => producto.id == boton.id);
+        agregarACarrito(prodACarro);
+      }
+    }
+  } 
 }
 
-function filtrarPorPrecio(maxPrice) {
-  const filteredProd = Productos.filter((producto) => producto.precio <= maxPrice);
-  return filteredProd;
+
+let tablaCarrito = document.getElementById("tablacarrito");
+
+
+function agregarACarrito(producto){
+  carrito.push(producto);
+  tablacarrito.innerHTML +=`
+    <tr>
+      <td>${producto.id}</td>
+      <td>${producto.nombre}</td>
+      <td>${producto.precio}</td>
+    </tr>
+  `;
 }
-renderizarprod(filtrarPorPrecio(1000000));
 
 
-
+renderizarprod(Productos);
 

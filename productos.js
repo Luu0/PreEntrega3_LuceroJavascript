@@ -7,19 +7,19 @@ const Productos=[{
   {
     id:2,
     foto: "https://http2.mlstatic.com/D_NQ_NP_719382-MLA47921864533_102021-O.webp",
-    nombre:"Auriculares Logitech G Series G335",
+    nombre:"Logitech G Series G335",
     precio:27000
   },
   {
     id:3,
     foto: "https://http2.mlstatic.com/D_NQ_NP_830625-MLA52062909392_102022-O.webp",
-    nombre:"Disco Solido Ssd 1tb M.2 Kingston Snv2s",
+    nombre:"Ssd 1tb M.2 Kingston Snv2s",
     precio:25000
   },
   {
     id:4,
     foto: "https://http2.mlstatic.com/D_NQ_NP_741180-MLA51631455572_092022-O.webp",
-    nombre:"Teclado gamer HyperX Alloy Elite 2",
+    nombre:"HyperX Alloy Elite 2",
     precio:50000
   },
   {
@@ -31,7 +31,7 @@ const Productos=[{
   {
     id:6,
     foto: "https://http2.mlstatic.com/D_NQ_NP_809414-MLA52700842510_122022-O.webp",
-    nombre:"Notebook gamer Asus TUF A15 FA507RE jaeger",
+    nombre:"Asus TUF A15 FA507RE jaeger",
     precio:900000
   }];
 
